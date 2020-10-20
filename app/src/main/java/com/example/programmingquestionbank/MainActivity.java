@@ -12,13 +12,14 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class MainActivity extends AppCompatActivity {
     private RadioButton optaion1,optaion2;
-    private Button button;
+
     private LottieAnimationView lottieAnimationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("Choose Activity");
 
 
         //find button.......
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (optaion2.isChecked()){
 
-                    Intent io = new Intent(MainActivity.this,UserActivity.class);
+                    Intent io = new Intent(MainActivity.this,StudentLoginActivity.class);
                     startActivity(io);
 
                 }

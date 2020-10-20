@@ -21,13 +21,11 @@
             android:id="@+id/etName"
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="150dp"
             android:background="@drawable/bcs_shape"
-
             android:hint="@string/username"
             android:textColorHint="#000000"
             android:textSize="20sp" />
-
 
 
         <EditText
@@ -42,34 +40,29 @@
             android:textSize="20sp" />
 
 
-
-
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/btnLogin"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            app:lottie_fileName="r.json"
+            android:layout_centerInParent="true"
             android:layout_marginLeft="300dp"
             android:backgroundTint="#fff"
             android:scaleType="fitCenter"
             app:lottie_autoPlay="true"
-            android:layout_centerInParent="true"
-            app:lottie_loop="true"/>
+            app:lottie_fileName="r.json"
+            app:lottie_loop="true" />
 
 
         <TextView
             android:id="@+id/tvinfo"
-            android:layout_marginTop="9dp"
-            android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:paddingLeft="10dp"
             android:text="@string/no_of_incorrect_attempts" />
 
 
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>
