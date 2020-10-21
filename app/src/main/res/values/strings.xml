@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Programming Question Bank</string>
     <string name="no_of_incorrect_attempts">No of incorrect attempts:</string>
-    <string name="password">Password</string>
+
     <string name="username">UserName</string>
+    <string name="register_text">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="already_registred_login_me">Already registred ! Login me</string>
 </resources>

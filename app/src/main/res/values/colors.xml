@@ -13,4 +13,9 @@
     <color name="colorPrimary2">#E9A031</color>
     <color name="colorPrimaryDark2">#E9A031 </color>
     <color name="colorAccent2">#E9A031</color>
+
+
+    <color name="colorPrimary3">#FB689A</color>
+    <color name="colorPrimaryDark3">#FB689A </color>
+    <color name="colorAccent3">#000000</color>
 </resources>
