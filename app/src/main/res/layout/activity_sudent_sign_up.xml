@@ -34,7 +34,6 @@
                 android:layout_height="wrap_content"
                 android:shadowColor="#57000000"
                 android:text="@string/register_text"
-
                 android:textColor="#000000"
                 android:textSize="30sp"
                  android:drawableRight="@drawable/dbarrow"
@@ -42,7 +41,7 @@
                 android:layout_marginBottom="32dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUpusernameEditTextID"
+
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:textColorHint="#fff"
@@ -50,6 +49,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/signUpusernameEditTextID"
                     android:layout_height="wrap_content"
                     android:hint="Full Name"
                     android:drawableStart="@drawable/user"
@@ -61,7 +61,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUpEmailEditTextID"
+
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:textColorHint="#fff"
@@ -69,6 +69,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/signUpEmailEditTextID"
                     android:layout_height="wrap_content"
                     android:hint="Email"
                     android:drawableStart="@drawable/email"
@@ -79,14 +80,16 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUppasswordEditTextID"
+
                 android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
                 android:layout_height="60dp"
                 android:textColorHint="#fff"
                 app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/signUppasswordEditTextID"
                     android:layout_height="wrap_content"
                     android:hint="@string/password"
                     android:drawableStart="@drawable/ic_pass"
@@ -98,14 +101,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUpconfirmpassEditTextID"
+
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                app:passwordToggleEnabled="true"
                 android:textColorHint="#fff"
                 app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/signUpconfirmpassEditTextID"
                     android:layout_height="wrap_content"
                     android:hint="@string/confirm_password"
                     android:drawableStart="@drawable/ic_pass"

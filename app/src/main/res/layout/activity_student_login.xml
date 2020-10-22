@@ -16,43 +16,55 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <com.google.android.material.textfield.TextInputLayout
 
-        <EditText
-            android:id="@+id/signInEmailEditTextID"
             android:layout_width="350dp"
-            android:layout_height="50dp"
+            app:passwordToggleEnabled="true"
             android:layout_marginTop="100dp"
-            android:background="@drawable/btnshape"
-            android:fontFamily="@font/calibri"
-            android:gravity="center"
-            android:drawableStart="@drawable/ic_email"
-           android:padding="10dp"
-            android:hint="Enter Your Email"
-            android:inputType="text"
-            android:textAlignment="center"
-            android:textColor="#E9A031"
-            android:textColorHint="#E9A031"
-            android:textSize="20sp"
-            android:drawableLeft="@drawable/ic_email" />
+            android:layout_height="60dp"
+            android:textColorHint="#fff"
+            app:errorEnabled="true">
 
-        <EditText
-            android:id="@+id/signInpasswordEditTextID"
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/signInEmailEditTextID"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Email"
+                android:textColor="#fff"
+                android:background="@drawable/btnshape"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="7dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_email"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
             android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:drawableStart="@drawable/ic_baseline_lock_24"
-            android:padding="10dp"
-            android:background="@drawable/btnshape"
-            android:fontFamily="@font/calibri"
-            android:gravity="center"
-            android:hint="Enter Your Password"
-            android:inputType="textPassword"
-            android:textAlignment="center"
-            android:textColor="#E9A031"
-            android:textColorHint="#E9A031"
-            android:textSize="20sp"
-            android:drawableLeft="@drawable/ic_email" />
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#fff"
+            android:layout_height="60dp"
+            android:textColorHint="#fff"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signInpasswordEditTextID"
+                android:hint="Enter Your Password"
+                android:background="@drawable/btnshape"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="7dp"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_pass"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
 
 
         <TextView
@@ -78,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/textId1"
+            android:id="@+id/signUpTextViewID"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="#fff"
@@ -91,6 +103,7 @@
             android:layout_gravity="center"
             android:textStyle="bold"
             android:textColor="#ffff"
+            android:id="@+id/signInButtonID"
             android:background="@drawable/logshap"
             android:layout_marginLeft="200dp"
             android:text="Login" />
@@ -113,6 +126,7 @@
       <ImageView
           android:layout_width="40dp"
           android:layout_height="40dp"
+          android:id="@+id/btngoogle"
           android:layout_marginRight="10dp"
           android:src="@drawable/google"/>
 

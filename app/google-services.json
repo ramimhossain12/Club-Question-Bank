@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "133744490516",
+    "firebase_url": "https://club-question-bank.firebaseio.com",
+    "project_id": "club-question-bank",
+    "storage_bucket": "club-question-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133744490516:android:76c7ca783dac48f0908f01",
+        "android_client_info": {
+          "package_name": "com.example.programmingquestionbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133744490516-1t0e3p889lci5ivbpngldahlqsq3icck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.programmingquestionbank",
+            "certificate_hash": "e9b55fb91d0d9e33e19293c0bd50b1e29643bffa"
+          }
+        },
+        {
+          "client_id": "133744490516-m1mq4k6ojiqa8e0m5nkl9nglg5b84779.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDakTGH-ADBaj2QB5qt5jPZm_9ZJ9kgu9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133744490516-m1mq4k6ojiqa8e0m5nkl9nglg5b84779.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
