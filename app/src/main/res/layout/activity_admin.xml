@@ -21,9 +21,11 @@
             android:id="@+id/etName"
             android:layout_width="300dp"
             android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_marginTop="150dp"
             android:background="@drawable/bcs_shape"
             android:hint="@string/username"
+            android:paddingLeft="12dp"
             android:textColorHint="#000000"
             android:textSize="20sp" />
 
@@ -34,8 +36,9 @@
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bcs_shape"
-
+            android:layout_gravity="center"
             android:hint="@string/password"
+            android:paddingLeft="12dp"
             android:textColorHint="#000000"
             android:textSize="20sp" />
 
