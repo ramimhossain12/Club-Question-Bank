@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StudentDashBoardActivity"></activity>
+        <activity android:name=".NoteActivity"></activity>
+        <activity android:name=".ImageUploadActivity" />
+        <activity android:name=".UploadFileActivity" />
+        <activity android:name=".StudentDashBoardActivity" />
         <activity
             android:name=".SudentSignUpActivity"
             android:theme="@style/AppTheme3" />

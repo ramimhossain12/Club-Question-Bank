@@ -10,4 +10,5 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="create_account">CREATE ACCOUNT</string>
     <string name="already_registred_login_me">Already registred ! Login me</string>
+    <string name="upload_file">Upload File</string>
 </resources>
