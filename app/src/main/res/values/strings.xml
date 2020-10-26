@@ -10,5 +10,32 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="create_account">CREATE ACCOUNT</string>
     <string name="already_registred_login_me">Already registred ! Login me</string>
-    <string name="upload_file">Upload File</string>
+
+
+    <string-array name="topic_name">
+
+        <item> Retrive File</item>
+        <item> Upload Image</item>
+        <item> Retrive Image</item>
+        <item> Retrive Video</item>
+        <item> NoteBook</item>
+        <item> Calender</item>
+        <item> BarCode Scanner</item>
+
+    </string-array>
+
+
+    <string-array name="topic_desc">
+
+
+        <item> Click New Activity</item>
+        <item> Click New Activity</item>
+        <item> Click New Activity</item>
+        <item> Click New Activity</item>
+        <item> Click New Activity</item>
+        <item> Click New Activity</item>
+        <item> Click New Activity</item>
+
+    </string-array>
 </resources>
+
