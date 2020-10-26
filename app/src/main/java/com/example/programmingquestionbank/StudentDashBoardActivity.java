@@ -36,14 +36,14 @@ public class StudentDashBoardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_student_dash_board);
 
 
-        
+
         //for image slider.............
         imageSlider = findViewById(R.id.slider1);
         List<SlideModel> slideModels=new ArrayList<>();
 
-        slideModels.add(new SlideModel("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","Best Pizza Collection "));
-        slideModels.add(new SlideModel("https://cyber-breeze.com/wp-content/uploads/2017/02/featured-image-39.jpg","Pizza "));
-        slideModels.add(new SlideModel("https://specials-images.forbesimg.com/imageserve/1152308114/960x0.jpg?fit=scale","Best Coffee Collection"));
+        slideModels.add(new SlideModel("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60","Happy Coding"));
+        slideModels.add(new SlideModel("https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60","Coding "));
+        slideModels.add(new SlideModel("https://images.unsplash.com/photo-1535551951406-a19828b0a76b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1046&q=80","PHP Coding"));
         slideModels.add(new SlideModel("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","Click The Butoon"));
         slideModels.add(new SlideModel("https://ichef.bbci.co.uk/news/660/cpsprodpb/3DAD/production/_104898751_gettyimages-844466808.jpg","Many items Food This Apps"));
         slideModels.add(new SlideModel("https://post.healthline.com/wp-content/uploads/sites/3/2020/02/324771_1100-1100x628.jpg","Tea"));
