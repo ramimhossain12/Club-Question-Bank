@@ -82,7 +82,7 @@ public class UploadFileActivity extends AppCompatActivity {
                         Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                         while (!uri.isComplete());
                         Uri url = uri.getResult();
-                        UploadPDF uploadPDF = new UploadPDF(editPDFName.getText().toString(),url.toString());
+                        uploadPDF uploadPDF = new uploadPDF(editPDFName.getText().toString(),url.toString());
                         databaseReference.child(databaseReference.push().getKey()).setValue(uploadPDF);
                         Toast.makeText(UploadFileActivity.this,"File Uploaded",Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
@@ -97,4 +97,9 @@ public class UploadFileActivity extends AppCompatActivity {
             }
         });
         }
+
+    public void btn_action(View view) {
+
+        startActivity(new Intent(getApplicationContext(),RetriveFileActivity.class));
     }
+}

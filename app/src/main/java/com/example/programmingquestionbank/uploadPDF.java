@@ -1,14 +1,14 @@
 package com.example.programmingquestionbank;
 
-public class UploadPDF {
+public class uploadPDF {
 
     public  String name;
     public  String url;
 
-    public UploadPDF() {
+    public uploadPDF() {
     }
 
-    public UploadPDF(String name, String url) {
+    public uploadPDF(String name, String url) {
         this.name = name;
         this.url = url;
     }
