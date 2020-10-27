@@ -7,6 +7,7 @@ import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.programmingquestionbank.Image.ImageUploadActivity
 import java.util.*
 
 class AdminDashBoardActivity : AppCompatActivity() {
@@ -41,7 +42,7 @@ class AdminDashBoardActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             if (position==2){
-                val intent = Intent(this,ImageUploadActivity::class.java)
+                val intent = Intent(this, ImageUploadActivity::class.java)
                 startActivity(intent)
             }
 
