@@ -20,6 +20,7 @@ import com.example.programmingquestionbank.R;
 import com.example.programmingquestionbank.StartActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -88,6 +89,9 @@ public class  ImageUploadActivity extends AppCompatActivity implements View.OnCl
                  }
                  break;
              case R.id.displayImageButton:
+
+                 Intent intent = new Intent(ImageUploadActivity.this,ImageActivity.class);
+                 startActivity(intent);
                  break;
          }
     }
@@ -151,7 +155,11 @@ public class  ImageUploadActivity extends AppCompatActivity implements View.OnCl
 
                         Toast.makeText(getApplicationContext(),"Image is stored successfully",Toast.LENGTH_SHORT).show();
 
-                         ImageUpload upload = new ImageUpload(imageName,taskSnapshot.getStorage().getDownloadUrl().toString());
+                        Task<Uri> urlTask = taskSnapshot.getStorage().getDownloadUrl();
+                        while (!urlTask.isSuccessful());
+                        Uri downloadUrl = urlTask.getResult();
+
+                         ImageUpload upload = new ImageUpload(imageName, downloadUrl.toString());
                          String  uploadId = databaseReference.push().getKey();
                          databaseReference.child(uploadId).setValue(upload);
                     }
