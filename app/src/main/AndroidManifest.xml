@@ -15,7 +15,7 @@
         <activity android:name=".RetriveFileSecondActivity"></activity>
         <activity android:name=".RetriveImageActivity" />
         <activity android:name=".RetriveFileActivity" />
-        <activity android:name=".NoteActivity" />
+        <activity android:name=".NoteStudentActivity" />
         <activity android:name=".ImageUploadActivity" />
         <activity android:name=".UploadFileActivity" />
         <activity android:name=".StudentDashBoardActivity" />

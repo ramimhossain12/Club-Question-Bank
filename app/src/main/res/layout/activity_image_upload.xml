@@ -4,19 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="3"
     tools:context=".ImageUploadActivity">
-    <TextView
+
+
+    <Button
+        android:id="@+id/chooseImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.25"
+        android:background="#FFC107"
+        android:text="CHOOSE IMAGE" />
+
+    <EditText
+        android:id="@+id/imageNameEditTextID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="15dp"
-        android:padding="10dp"
-        android:drawablePadding="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.25"
+        android:hint="Caption your image" />
 
-        android:text="image Upload"
-        android:textSize="25sp"
-        android:textColor="#000000"
-        android:id="@+id/tex1"/>
 
+    <ImageView
+        android:id="@+id/imageViewID"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbarIDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.16"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/saveImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.17"
+        android:background="#FFC107"
+        android:text="UPLOAD IMAGE" />
+
+    <Button
+        android:id="@+id/displayImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.17"
+        android:background="#FFC107"
+        android:text="SHOW IMAGE" />
 
 
 </LinearLayout>

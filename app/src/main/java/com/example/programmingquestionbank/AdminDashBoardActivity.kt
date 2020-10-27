@@ -27,7 +27,7 @@ class AdminDashBoardActivity : AppCompatActivity() {
         imageSlider?.setImageList(slideModel, true)
 
 
-        val dasboard = arrayOf("Upload File ","Note ","Image Upload","Data send","Video Upload","Calander")
+        val dasboard = arrayOf("Upload PDF File ","Note ","Image Upload","Data send","Video Upload","Calender")
         val listView = findViewById<ListView>(R.id.listViewID)
         listView.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dasboard)
         listView.setOnItemClickListener { parent, view, position, id ->
@@ -37,7 +37,7 @@ class AdminDashBoardActivity : AppCompatActivity() {
              }
 
             if (position==1){
-                val intent = Intent(this,NoteActivity::class.java)
+                val intent = Intent(this, NoteStudentActivity::class.java)
                 startActivity(intent)
             }
             if (position==2){

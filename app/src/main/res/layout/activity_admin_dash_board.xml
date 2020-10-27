@@ -21,18 +21,22 @@
         app:corner_radius="20"
         android:layout_height="250dp"/>
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        
-        android:divider="#FF9800"
-         tools:listheader="@layout/item"
-        android:layout_marginTop="10dp"
-        android:dividerHeight="1dp"
-        android:listSelector="#8BC34A"
-        android:id="@+id/listViewID">
 
-    </ListView>
+
+
+        <ListView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            tools:listheader="@layout/item"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:dividerHeight="1dp"
+            android:listSelector="#4CAF50"
+            android:id="@+id/listViewID">
+
+        </ListView>
+
 
 
 

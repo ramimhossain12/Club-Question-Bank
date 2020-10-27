@@ -15,9 +15,9 @@
     <string-array name="topic_name">
 
         <item> View Programming Question</item>
-        <item> Upload Image</item>
-        <item> Retrive Image</item>
-        <item> Retrive Video</item>
+        <item> Upload Image For Club</item>
+        <item> Show Image</item>
+        <item> Upload Video</item>
         <item> NoteBook</item>
         <item> Calender</item>
         <item> BarCode Scanner</item>
