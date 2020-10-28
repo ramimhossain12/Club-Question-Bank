@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.programmingquestionbank.Image.ImageActivity;
+import com.example.programmingquestionbank.Image.ImageUploadActivity;
 import com.google.firebase.database.core.Context;
 
 import java.util.ArrayList;
@@ -69,7 +71,12 @@ public class StudentDashBoardActivity extends AppCompatActivity {
                 }
 
                 if (position==1){
-                    Intent in = new Intent(StudentDashBoardActivity.this,RetriveImageActivity.class);
+                    Intent in = new Intent(StudentDashBoardActivity.this, ImageUploadActivity.class);
+                    startActivity(in);
+                }
+
+                if (position==2){
+                    Intent in = new Intent(StudentDashBoardActivity.this, ImageActivity.class);
                     startActivity(in);
                 }
             }

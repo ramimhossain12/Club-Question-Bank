@@ -8,12 +8,15 @@
     tools:context=".Image.ImageActivity">
 
 
-<ProgressBar
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/progID"/>
+    <ProgressBar
+        android:id="@+id/progID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewID"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerViewID"/>
+        android:layout_height="match_parent" />
 </LinearLayout>

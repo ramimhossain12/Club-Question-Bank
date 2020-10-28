@@ -14,7 +14,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Image.ImageActivity"></activity>
         <activity android:name=".RetriveFileSecondActivity" />
-        <activity android:name=".RetriveImageActivity" />
         <activity android:name=".RetriveFileActivity" />
         <activity android:name=".NoteStudentActivity" />
         <activity android:name=".Image.ImageUploadActivity" />
