@@ -12,7 +12,6 @@
     <VideoView
         android:layout_width="match_parent"
         android:layout_height="230dp"
-        android:backgroundTint="#000000"
         android:id="@+id/videoview_MainID"/>
 
 

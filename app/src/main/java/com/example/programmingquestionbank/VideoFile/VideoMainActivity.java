@@ -1,5 +1,6 @@
 package com.example.programmingquestionbank.VideoFile;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,7 +17,7 @@ import com.example.programmingquestionbank.R;
 
 public class VideoMainActivity extends AppCompatActivity {
 
-    private  static  final  int PICK_VIDEO = 1;
+    private static final int PICK_VIDEO = 1;
     VideoView videoView;
     Button button;
     ProgressBar progressBar;
@@ -39,13 +40,24 @@ public class VideoMainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+                if (requestCode == PICK_VIDEO || requestCode == RESULT_OK ||
+                data!=null || data.getData() !=null){
+                    videoUri = data.getData();
+                    videoView.setVideoURI(videoUri);
+                }
+    }
+
     // for choose video in storage
     public void ChooseVideo(View view) {
 
         Intent intent = new Intent();
         intent.setType("video/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-         startActivityForResult(intent,PICK_VIDEO);
+        startActivityForResult(intent, PICK_VIDEO);
     }
 
     public void ShowVideo(View view) {

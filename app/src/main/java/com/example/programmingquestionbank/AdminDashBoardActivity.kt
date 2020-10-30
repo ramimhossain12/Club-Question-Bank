@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.programmingquestionbank.Image.ImageUploadActivity
+import com.example.programmingquestionbank.VideoFile.VideoMainActivity
 import java.util.*
 
 class AdminDashBoardActivity : AppCompatActivity() {
@@ -43,6 +44,11 @@ class AdminDashBoardActivity : AppCompatActivity() {
             }
             if (position==2){
                 val intent = Intent(this, ImageUploadActivity::class.java)
+                startActivity(intent)
+            }
+
+            if (position==4){
+                val intent = Intent(this, VideoMainActivity::class.java)
                 startActivity(intent)
             }
 
