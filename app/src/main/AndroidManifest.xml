@@ -12,11 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoFile.VideoMainActivity"></activity>
+        <activity android:name=".AdminNote.AdminNoteActivity"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".VideoFile.VideoMainActivity" />
         <activity android:name=".Image.ImageActivity" />
         <activity android:name=".RetriveFileSecondActivity" />
         <activity android:name=".RetriveFileActivity" />
-        <activity android:name=".NoteStudentActivity" />
         <activity android:name=".Image.ImageUploadActivity" />
         <activity android:name=".UploadFileActivity" />
         <activity android:name=".StudentDashBoardActivity" />

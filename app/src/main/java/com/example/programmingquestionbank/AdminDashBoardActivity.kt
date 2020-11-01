@@ -7,6 +7,7 @@ import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.programmingquestionbank.AdminNote.AdminNoteActivity
 import com.example.programmingquestionbank.Image.ImageUploadActivity
 import com.example.programmingquestionbank.VideoFile.VideoMainActivity
 import java.util.*
@@ -39,7 +40,7 @@ class AdminDashBoardActivity : AppCompatActivity() {
              }
 
             if (position==1){
-                val intent = Intent(this, NoteStudentActivity::class.java)
+                val intent = Intent(this, AdminNoteActivity::class.java)
                 startActivity(intent)
             }
             if (position==2){

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#FFC107"
+    tools:context=".AdminNote.AdminNoteActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ff"
+        android:gravity="center_horizontal"
+        android:text="Sticky Notes "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextID3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:background="#FFFFFF"
+        android:gravity="start"
+        android:hint="Subject :"
+        android:lines="16"
+        android:padding="10dp"
+        android:textColor="#160F0F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editTextID2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:background="#FFFFFF"
+        android:gravity="start"
+        android:hint="Date :"
+        android:lines="16"
+        android:padding="10dp"
+        android:textColor="#160F0F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="17dp"
+        android:background="#FFFFFF"
+        android:hint="Note......."
+        android:gravity="start"
+        android:lines="16"
+        android:padding="10dp"
+        android:textColor="#160F0F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/saveButtonID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_note_shape"
+        android:backgroundTint="#FFC107"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="#000000"
+        android:textStyle="italic"
+
+        />
+
+</LinearLayout>
