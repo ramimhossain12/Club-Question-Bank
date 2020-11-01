@@ -53,6 +53,11 @@ class AdminDashBoardActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
+            if (position==6){
+                val intent = Intent(this, CalanderActivity::class.java)
+                startActivity(intent)
+            }
+
         }
     }
 }
