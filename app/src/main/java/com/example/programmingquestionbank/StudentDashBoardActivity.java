@@ -7,16 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.programmingquestionbank.Image.ImageActivity;
 import com.example.programmingquestionbank.Image.ImageUploadActivity;
-import com.google.firebase.database.core.Context;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class StudentDashBoardActivity extends AppCompatActivity {
@@ -83,6 +80,10 @@ public class StudentDashBoardActivity extends AppCompatActivity {
 
                 if (position==5){
                     Intent in = new Intent(StudentDashBoardActivity.this, CalanderActivity.class);
+                    startActivity(in);
+                }
+                if (position==6){
+                    Intent in = new Intent(StudentDashBoardActivity.this, BarCodeScanner.class);
                     startActivity(in);
                 }
             }
