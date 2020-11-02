@@ -17,25 +17,26 @@ class AdminDashBoardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_dash_board)
+        supportActionBar!!.title = "Admin DashBoard"
         //now we can create two types of slider first using viewpager
         //and another using third party library which is easy to use let's get started
         imageSlider = findViewById(R.id.slider)
         val slideModel: MutableList<SlideModel> = ArrayList()
-        slideModel.add(SlideModel("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "Best Pizza Collection "))
-        slideModel.add(SlideModel("https://cyber-breeze.com/wp-content/uploads/2017/02/featured-image-39.jpg", "Pizza "))
-        slideModel.add(SlideModel("https://specials-images.forbesimg.com/imageserve/1152308114/960x0.jpg?fit=scale", "Best Coffee Collection"))
-        slideModel.add(SlideModel("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "Click The Butoon"))
-        slideModel.add(SlideModel("https://ichef.bbci.co.uk/news/660/cpsprodpb/3DAD/production/_104898751_gettyimages-844466808.jpg", "Many items Food This Apps"))
-        slideModel.add(SlideModel("https://post.healthline.com/wp-content/uploads/sites/3/2020/02/324771_1100-1100x628.jpg", "Tea"))
+        slideModel.add(SlideModel("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", "Coding"))
+        slideModel.add(SlideModel("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=947&q=80", "Coding "))
+        slideModel.add(SlideModel("https://images.unsplash.com/photo-1546146830-2cca9512c68e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80", "Developer"))
+        slideModel.add(SlideModel("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", "Programming Contest"))
+        slideModel.add(SlideModel("https://images.unsplash.com/photo-1560264418-c4445382edbc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", "Team Work"))
+        slideModel.add(SlideModel("https://images.unsplash.com/photo-1485856407642-7f9ba0268b51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", "Code & Tea"))
         imageSlider?.setImageList(slideModel, true)
 
 
-        val dasboard = arrayOf("Upload PDF File ","Note ","Image Upload","Data send","Video Upload","Calender")
+        val dasboard = arrayOf("Upload Question ", "TODO List ", "Image Upload", "Data send", "Video Upload", "Calender")
         val listView = findViewById<ListView>(R.id.listViewID)
-        listView.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dasboard)
+        listView.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dasboard)
         listView.setOnItemClickListener { parent, view, position, id ->
              if (position==0){
-                 val intent = Intent(this,UploadFileActivity::class.java)
+                 val intent = Intent(this, UploadFileActivity::class.java)
                  startActivity(intent)
              }
 
@@ -53,7 +54,7 @@ class AdminDashBoardActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
-            if (position==6){
+            if (position==5){
                 val intent = Intent(this, CalanderActivity::class.java)
                 startActivity(intent)
             }

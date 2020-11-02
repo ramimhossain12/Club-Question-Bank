@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CalanderActivity"></activity>
+        <activity android:name=".CalanderActivity"
+            android:theme="@style/AppTheme4"/>
         <activity
             android:name=".AdminNote.AdminNoteActivity"
             android:theme="@style/AppTheme2" />

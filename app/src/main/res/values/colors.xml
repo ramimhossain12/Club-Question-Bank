@@ -18,4 +18,11 @@
     <color name="colorPrimary3">#FB689A</color>
     <color name="colorPrimaryDark3">#FB689A </color>
     <color name="colorAccent3">#000000</color>
+
+
+    <color name="colorPrimary4">#AAA4A6</color>
+    <color name="colorPrimaryDark4">#AAA4A6 </color>
+    <color name="colorAccent4">#AAA4A6</color>
+
+
 </resources>
