@@ -12,6 +12,7 @@
     <string name="already_registred_login_me">Already registred ! Login me</string>
 
 
+
     <string-array name="topic_name">
 
         <item> View Programming Question</item>
@@ -36,6 +37,12 @@
         <item> Click New Activity</item>
 
     </string-array>
+
+
+
+
+     <string name="about_t">Studying in Computer Science and Engineering at Daffodil International University. Passionate about android  and ios app development. Love to build android and ios application.</string>
+
 
 
 </resources>
