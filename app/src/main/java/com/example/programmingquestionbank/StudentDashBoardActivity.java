@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.programmingquestionbank.AdminNote.AdminNoteActivity;
 import com.example.programmingquestionbank.Image.ImageActivity;
 import com.example.programmingquestionbank.Image.ImageUploadActivity;
 
@@ -24,7 +25,7 @@ public class StudentDashBoardActivity extends AppCompatActivity {
 
 
 
-    int[] images = {R.drawable.files, R.drawable.upload,R.drawable.picture, R.drawable.video, R.drawable.note, R.drawable.calendar, R.drawable.barcode};
+    int[] images = {R.drawable.files, R.drawable.upload,R.drawable.picture, R.drawable.note, R.drawable.calendar, R.drawable.barcode};
     String[] title, desc;
     RecyclerView recyclerView;
     MyAdapter myAdapter;
@@ -77,15 +78,21 @@ public class StudentDashBoardActivity extends AppCompatActivity {
                     Intent in = new Intent(StudentDashBoardActivity.this, ImageActivity.class);
                     startActivity(in);
                 }
+                if (position==3){
+                    Intent in = new Intent(StudentDashBoardActivity.this, AdminNoteActivity.class);
+                    startActivity(in);
+                }
 
-                if (position==5){
+                if (position==4){
                     Intent in = new Intent(StudentDashBoardActivity.this, CalanderActivity.class);
                     startActivity(in);
                 }
-                if (position==6){
+
+                if (position==5){
                     Intent in = new Intent(StudentDashBoardActivity.this, BarCodeScanner.class);
                     startActivity(in);
                 }
+
             }
 
             @Override

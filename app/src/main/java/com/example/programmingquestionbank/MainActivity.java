@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (optaion2.isChecked()){
 
-                    Intent io = new Intent(MainActivity.this,StudentDashBoardActivity.class);
-                    //StudentLoginActivity
+                    Intent io = new Intent(MainActivity.this,StudentLoginActivity.class);
+
                     startActivity(io);
 
                 }
