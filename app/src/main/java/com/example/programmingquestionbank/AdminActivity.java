@@ -13,7 +13,8 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class AdminActivity extends AppCompatActivity {
     private EditText Name, Password;
-    private LottieAnimationView animationView;
+    //private LottieAnimationView animationView;
+    private  Button bt;
     private TextView info;
     private  int counter =5;
 
@@ -24,12 +25,12 @@ public class AdminActivity extends AppCompatActivity {
 
         Name = findViewById(R.id.etName);
         Password = findViewById(R.id.etpassword);
-        animationView = findViewById(R.id.btnLogin);
+        bt = findViewById(R.id.btnLogin);
         info = findViewById(R.id.tvinfo);
 
         info.setText("No of attempts remaining : 5");
 
-        animationView.setOnClickListener(new View.OnClickListener() {
+        bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 validate(Name.getText().toString(),Password.getText().toString());
@@ -46,7 +47,7 @@ public class AdminActivity extends AppCompatActivity {
             counter--;
             info.setText("No of attempts remaining:" + String.valueOf(counter));
             if (counter == 0){
-                animationView.setEnabled(false);
+                bt.setEnabled(false);
             }
         }
     }
