@@ -37,4 +37,19 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark4</item>
         <item name="colorAccent">@color/colorAccent4</item>
     </style>
+
+
+    <style name="AppTheme5" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5b53fb</item>
+        <item name="colorPrimaryDark">#5b53fb</item>
+        <item name="colorAccent">@color/colorAccent4</item>
+    </style>
+
+    <style name="GG" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#030304</item>
+        <item name="colorPrimaryDark">#030304</item>
+        <item name="colorAccent">@color/colorAccent3</item>
+    </style>
 </resources>
