@@ -24,18 +24,30 @@
 
 
 
-        <ListView
-            android:layout_width="350dp"
-            android:layout_height="match_parent"
-            android:divider="#000000"
-            tools:listheader="@layout/item"
-            android:paddingLeft="10dp"
-            android:layout_marginTop="50dp"
-            android:dividerHeight="1dp"
-            android:listSelector="#4CAF50"
-            android:id="@+id/listViewID">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="34dp"
+        android:layout_height="wrap_content"
+        android:textSize="33dp"
+        android:gravity="center"
+        android:background="#5b53fb"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/ff"
+        android:text="All Item"
+        />
 
-        </ListView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#000000"
+        android:paddingLeft="10dp"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="5dp"
+        android:listSelector="#6159FB"
+        android:id="@+id/listViewID">
+
+    </ListView>
 
 
 

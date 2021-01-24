@@ -32,7 +32,8 @@
         <activity android:name=".Image.ImageActivity" />
         <activity android:name=".RetriveFileSecondActivity" />
         <activity android:name=".RetriveFileActivity" />
-        <activity android:name=".Image.ImageUploadActivity" />
+        <activity android:name=".Image.ImageUploadActivity"
+            android:theme="@style/ii" />
         <activity android:name=".UploadFileActivity" />
         <activity android:name=".StudentDashBoardActivity" />
         <activity

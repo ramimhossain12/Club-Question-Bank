@@ -52,4 +52,12 @@
         <item name="colorPrimaryDark">#030304</item>
         <item name="colorAccent">@color/colorAccent3</item>
     </style>
+
+
+    <style name="ii" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#EB3349</item>
+        <item name="colorPrimaryDark">#EB3349</item>
+        <item name="colorAccent">@color/colorAccent3</item>
+    </style>
 </resources>
